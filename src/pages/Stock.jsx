@@ -13,8 +13,15 @@ export default function Stock (){
         }  
     }
     return (
-        <div>
-          <p>{currStock.name}</p> 
+        <div className="stockContainer">
+            <div className="Stock">
+               <h3><span>Company Name: </span> {currStock.name}</h3>
+               <h3><span>last Price: </span> {currStock.lastPrice}</h3>
+               <h3><span>Change: </span> {currStock.change}</h3>
+               <h3><span>High: </span> {currStock.high}</h3>
+               <h3><span>Low: </span> {currStock.low}</h3>
+               <h3><span>Open: </span> {currStock.open}</h3>
+            </div>
           <button onClick={()=>handleClick()}>{isFollow[Name]? "UnFollow":"Follow"}</button>
         </div>
 
